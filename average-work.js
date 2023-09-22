@@ -17,6 +17,8 @@ for (let i=0; i<10000; i++) {
     times.push(timeDiff);
     
     average = times.reduce((total, num) => (total + num))/times.length;
-    
+    const start =  Date.now();
+    console.log('start', start);
     console.log(`Time to mine block ${i}: ${timeDiff}ms. Difficulty: ${nextBlock.difficulty}. Average time: ${average}ms`);
+    console.log('time it took: ', Date.now() - start);
 }
