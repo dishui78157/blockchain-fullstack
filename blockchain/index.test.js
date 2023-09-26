@@ -149,7 +149,7 @@ describe('Blockchain', () => {
           });
         });
     
-        describe.skip('and the `validateTransactions` flag is true', () => {
+        describe('and the `validateTransactions` flag is true', () => {
           it('calls validTransactionData()', () => {
             const validTransactionDataMock = jest.fn();
     
