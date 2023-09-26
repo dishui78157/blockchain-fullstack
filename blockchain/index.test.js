@@ -1,6 +1,6 @@
-const Blockchain = require('./blockchain');
+const Blockchain = require('./index');
 const Block = require('./block');
-const {cryptoHash} = require('./util/crypto-hash');
+const {cryptoHash} = require('../util');
 
 describe('Blockchain', () => {
     let blockchain, newChain, originalChain, errorMock;
@@ -149,7 +149,7 @@ describe('Blockchain', () => {
           });
         });
     
-        describe.skip('and the `validateTransactions` flag is true', () => {
+        describe('and the `validateTransactions` flag is true', () => {
           it('calls validTransactionData()', () => {
             const validTransactionDataMock = jest.fn();
     

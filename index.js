@@ -10,7 +10,7 @@ const pubsub = new PubSub({ blockchain });
 
 const DEFAULT_PORT = 3000;
 const ROOT_NODE_ADDRESS = `http://localhost:${DEFAULT_PORT}}`;
-
+//comment the following line out, so the root node will not broadcast its chain to itself
 //setTimeout(() => pubsub.broadcastChain(), 1000);
 
 app.use(bodyParser.json());
